@@ -10,8 +10,7 @@ const BookList = async () => {
     }
 
     const books = await response.json();
-    // console.log("Books",books);
-    
+
     return (
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-7xl mx-auto mb-10">
             {books.map((book: Book) => (
