@@ -4,6 +4,7 @@ import { Book } from '@/types';
 
 const BookList = async () => {
     // data fetching
+    
     const response = await fetch(`${process.env.BACKEND_URL}/books`, { cache: 'no-store' });
     if (!response.ok) {
         throw new Error('An error occurred while fetching the books');
