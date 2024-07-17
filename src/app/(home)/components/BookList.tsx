@@ -5,7 +5,11 @@ import { Book } from '@/types';
 const BookList = async () => {
     // data fetching
     
-    const response = await fetch(`${process.env.BACKEND_URL}/books`, { cache: 'no-store' });
+    const response = await fetch(`${process.env.BACKEND_URL}/books`,{
+        next:{
+            revalidate:3600, // automatically delete stored cache after 1 hour
+        },
+    });
     if (!response.ok) {
         throw new Error('An error occurred while fetching the books');
     }
