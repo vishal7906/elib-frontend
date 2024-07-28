@@ -1,10 +1,11 @@
 Overview
-The eBook Library Frontend is a user-facing application built using Next.js and React. It provides an intuitive interface for users to browse, search, and read eBooks from the library. The frontend connects to the backend API to fetch book data and user information.
+The eBook Library Frontend is a user-facing application built using Next.js and React. It provides an intuitive interface for users to browse, read and download eBooks from the library. The frontend connects to the backend API to fetch book data and user information.
 
 Features-:
 Home Page: Browse featured and popular eBooks.
 Book Details: View detailed information about a book, including its description, author, and cover image.
 Reading Interface: Read eBooks directly in the browser with a responsive and user-friendly interface.
+Download: Providing ability to user to download book in PDF Format.
 
 Technologies Used-:
 Next.js, React.js, TailwindCSS, fetch, JS
